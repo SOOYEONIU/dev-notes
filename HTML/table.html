@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table태그</title>
+    <style>
+        table, td {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        table td {
+            padding: 10px;
+            text-align: center;
+        }
+        table tr:first-child td {
+            background-color: #9b9b9b;
+            border: 1px solid #888;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>표 만들기</h1>
+    <table> 
+        <tbody>
+            <tr>
+                <td>태그 속성</td>
+                <td>설명</td>
+            </tr>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>테이블을 생성하는 태그</td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>각 열의 제목을 정의</td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>테이블의 행 (세로)</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>테이블의 열(가로) / 하나의 테이블 셀을 정의</td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;</td>
+                <td>테이블의 헤더 부분을 그룹화</td>
+            </tr>
+            <tr>
+                <td>&lt;caption&gt;</td>
+                <td>테이블 캡션을 붙일때 &lt;table&gt;태그 바로 뒤에 사용</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
