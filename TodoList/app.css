@@ -6,6 +6,148 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(255, 255, 255);
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* start main */
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(232, 232, 232);
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+}
+
+section > h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.inputBox {
+    width: 100%;
+    height: 50px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#inputValue {
+    width: calc(100% - 70px);
+    height: 46px;
+    border: none;
+    border: 2px solid #222;
+    padding-left: 10px;
+}
+
+.plusBtn {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #222;
+    background-color: gray;
+}
+
+.plusBtn > span {
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: white;
+    left: 50%;
+    top : 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plusBtn > span:last-child {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+ul {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+    overflow-y: scroll;
+}
+
+ul > li {
+    width : 100%;
+    height: 100px;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+ul > li > button:first-child {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+ul > .complete > button:first-child::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 10px;
+    transform: translate(12px, -7px) rotate(45deg); 
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+}
+
+ul > li > div {
+    width: calc(100% - 120px);
+    height: auto;
+    margin-left: 10px;
+}
+
+ul > .complete > div {
+    text-decoration: line-through;
+    color: gray;
+}
+
+ul > li > button:last-child {
+    width: 60px;
+    height: 40px;
+    margin: 0 10px 0 10px;
+    background-color: white;
+    font-size: 16px;
+    background-color: #8e8e8e;
+    color: white;
+}
+/* end main */
