@@ -19,6 +19,8 @@ const plusBtnAction = () => {
         const todoUl = document.querySelector('#todoList');
         todoUl.appendChild(newLi);
 
+        inputValue.value = '';
+
         checkBtn.addEventListener('click', () => {
             newLi.classList.toggle('complete');
         })
